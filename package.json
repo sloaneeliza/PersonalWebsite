@@ -1,5 +1,6 @@
 {
       "name": "Portfolio Website Design",
+      "homepage": "https://sloaneeliza.github.io/PersonalWebsite/",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
@@ -55,8 +56,10 @@
       },
       "scripts": {
             "dev": "vite",
+            "start": "react-scripts start",
             "build": "vite build",
             "preview": "vite preview",
+            "predeploy": "npm run build",
             "deploy": "gh-pages -d build --no-history"
       }
 }

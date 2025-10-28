@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
 
 export function Hero() {
@@ -19,35 +19,27 @@ export function Hero() {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
-        {/* View My Work */}
-        <Button
-          onClick={() => window.open("https://github.com/sloaneeliza", "_blank")}
-          className="bg-white text-purple-600 hover:bg-white/90 shadow-lg"
-          size="lg"
-        >
-          View My Work
-        </Button>
-
-        {/* Contact Me */}
-        <Button
-          onClick={() => window.location.href = "mailto:sloanewright109@gmail.com"}
-          className="bg-white text-purple-600 hover:bg-white/90 shadow-lg"
-          size="lg"
-        >
-          Contact Me
-        </Button>
-      </div>
-          
-          {/* Social Links */}
-          <div className="flex gap-6 justify-center mt-10">
-            <a 
-              href="https://github.com/sloaneeliza" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white/80 hover:text-white transition-colors"
+            {/* View My Work */}
+            <Button
+              onClick={() => window.open("https://github.com/sloaneeliza", "_blank")}
+              className="bg-white text-purple-600 hover:bg-white/90 shadow-lg"
+              size="lg"
             >
-              <Github size={28} />
-            </a>
+              View My Work
+            </Button>
+
+            {/* Contact Me */}
+            <Button
+              onClick={() => window.location.href = "mailto:sloanewright109@gmail.com"}
+              className="bg-white text-purple-600 hover:bg-white/90 shadow-lg"
+              size="lg"
+            >
+              Contact Me
+            </Button>
+          </div>
+
+          {/* Social Links — LinkedIn only */}
+          <div className="flex gap-6 justify-center mt-10">
             <a 
               href="https://linkedin.com/in/sloane-wright" 
               target="_blank" 
@@ -55,12 +47,6 @@ export function Hero() {
               className="text-white/80 hover:text-white transition-colors"
             >
               <Linkedin size={28} />
-            </a>
-            <a 
-              href="mailto:your.email@sloanewright109.com"
-              className="text-white/80 hover:text-white transition-colors"
-            >
-              <Mail size={28} />
             </a>
           </div>
         </div>
