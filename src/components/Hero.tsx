@@ -18,20 +18,25 @@ export function Hero() {
             I'm always learning new things in tech everyday.
           </p>
           
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Button 
-              size="lg" 
-              className="bg-white text-purple-600 hover:bg-white/90 shadow-lg"
-            >
-              View My Work
-            </Button>
-            <Button 
-              size="lg" 
-              className="bg-white text-purple-600 hover:bg-white/90 shadow-lg"
-            >
-              Contact Me
-            </Button>
-          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+        {/* View My Work */}
+        <Button
+          onClick={() => window.open("https://github.com/sloaneeliza", "_blank")}
+          className="bg-white text-purple-600 hover:bg-white/90 shadow-lg"
+          size="lg"
+        >
+          View My Work
+        </Button>
+
+        {/* Contact Me */}
+        <Button
+          onClick={() => window.location.href = "mailto:sloanewright109@gmail.com"}
+          className="bg-white text-purple-600 hover:bg-white/90 shadow-lg"
+          size="lg"
+        >
+          Contact Me
+        </Button>
+      </div>
           
           {/* Social Links */}
           <div className="flex gap-6 justify-center mt-10">
